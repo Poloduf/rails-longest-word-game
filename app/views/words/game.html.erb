@@ -1,0 +1,15 @@
+<center>
+<h1>Here is the funniest game in the world</h1>
+
+<h2> Here is the random words grid : </h2>
+<%= @response %>
+
+<h3>Can you find any english words in this grid ?</h3>
+<form action="/score">
+  <label for="question"</label>
+    <input type="text" name="query" placeholder="">
+    <input type="hidden" name="start_time" value="<%= @start %>">
+    <input type="hidden" name="response" value="<%= @response %>">
+    <input type="submit" id="submit-btn" value="Check">
+</form>
+</center>
